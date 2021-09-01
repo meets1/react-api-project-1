@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+.pagination {
+  width: 80%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+/* .paginationBttns a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+}
+
+.paginationBttns a:hover {
+  color: white;
+  background-color: darkgrey;
+}
+
+.paginationActive a {
+  color: white;
+  background-color: darkgray;
+} */
+
+/* .paginationDisabled a {
+  color: grey;
+  background-color: grey;
+} */
