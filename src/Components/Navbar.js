@@ -2,21 +2,12 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import Home from './Home';
-// import ReactPaginate from 'react-paginate';
 import Pagination from './Pagination';
 
 export const Navbar = () => {
     const [userData, setuserData] = useState([]);
     const [search, setSearch] = useState('');
-    // const [filterDetail, setFilterdetail] = useState(null);
     const [sortDetail, setsortDetail] = useState(null);
-
-    // const [offset, setOffset] = useState(0);
-    // const [perPage] = useState(10);
-    // const [pageCount, setPageCount] = useState(0)
-
-    //const [tempData, setTempData] = useState([]);
-    //const [filter, SetFilter] = useState('');
 
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage] = useState(10);
@@ -36,15 +27,10 @@ export const Navbar = () => {
 
                 setuserData(details);
                 console.log(details);
-
-                // const slice = userData.slice(offset, offset + perPage)
             })
     }
 
-    // const handlePageClick = (e) => {
-    //     const selectedPage = e.selected;
-    //     setOffset(selectedPage + 1)
-    // };
+   
 
 /***********************************DELETING DATA***************************/
     const deleteRow = (id) => {
@@ -72,9 +58,6 @@ export const Navbar = () => {
     const newHandle = (e) => {
         console.log("working", userData)
         setuserData(userData.filter(fData => fData.userId == e.target.value))
-        // setuserData(ms)
-        // console.log(ms);
-        // === console.log(e.target.value)))
     }
     // const newFilter = () => {
     //     setuserData(userData.filter(userData => userData.userId === 6))
@@ -116,26 +99,10 @@ export const Navbar = () => {
                                     {/* {userData.filter(userData => userData.userId === 6).map((option) => (
                                             <option value={filterDetail}>{option.userId}</option>
                                         ))} */}
-
-
-                                    {/* <option className="btn" value={filterDetail} >
-                                            Filter BY 6
-                                        </option> */}
-
-                                    {/* <br />
-                                    <button className="btn" value={filterDetail} onClick={() => setFilterdetail(newFilter)}>
-                                        Filter BY 6
-                                    </button>
-                                    <br /> */}
                                     <button className="btn" value={sortDetail} onClick={(e) => setsortDetail(sortField)}>
                                         Sort BY Descending
                                     </button>
-                                    {/* 
-                                    {userData.map((ud) => {
-                                        if (ud.userId == 5) {
-                                            return <option key={ud.userId} value={ud.userId}>{ud.userId}</option>
-                                        }
-                                    })} */}
+                       
                                 </div>
                             </li>
                         </ul>
