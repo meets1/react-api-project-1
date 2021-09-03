@@ -27,17 +27,6 @@ const Home = ({ userData,deleteRow}) => {
                     </tbody>
                 </table>
             </div>
-            {/* <ReactPaginate
-                previousLabel={"Previous"}
-                nextLabel={"Next"}
-                pageCount={pageCount}
-                onPageChange={changePage}
-                containerClassName={"paginationBttns"}
-                previousLinkClassName={"previousBttn"}
-                nextLinkClassName={"nextBttn"}
-                disabledClassName={"paginationDisabled"}
-                activeClassName={"paginationActive"}
-            /> */}
         </div>
     )
 }
