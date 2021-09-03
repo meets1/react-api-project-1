@@ -1,39 +1,6 @@
 import React from 'react'
 
-// import ReactPaginate from 'react-paginate'
-// import axios from 'axios'
-// import { Navbar } from './Navbar';
-
 const Home = ({ userData,deleteRow}) => {
-    // const deleteItem = (index) => {
-    //     const updatedItems = allData.filter((user) => {
-    //         return user.id !== index;
-    //     });
-    //     setuserData(updatedItems)
-    // };
-
-    // const [pageNumber, setPageNumber] = useState(0);
-
-    // const usersPerPage = 10;
-    // const pagesVisited = pageNumber * usersPerPage;
-
-    // const pageCount = Math.ceil(userData.length / usersPerPage);
-
-    // const changePage = ({ selected }) => {
-    //     setPageNumber(selected);
-    // };
-
-    // const displayUsers = userData
-    //     .slice(pagesVisited, pagesVisited + usersPerPage)
-    //     .map((user) => {
-    //         return (
-    //             <tr key={user.id}>
-    //                 <td>{user.userId}</td>
-    //                 <td>{user.title}</td>
-    //                 <td>{user.body}</td>
-    //             </tr>
-    //         );
-    //     });
 
     return (
         <div className="container">
