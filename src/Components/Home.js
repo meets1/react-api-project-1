@@ -4,7 +4,6 @@ const Home = ({ userData,deleteRow}) => {
 
     return (
         <div className="container">
-            {/* <Navbar /> */}
             <div className="mt-4 ms-auto">
                 <table className='table table-bordered'>
                     <tbody>
@@ -14,7 +13,7 @@ const Home = ({ userData,deleteRow}) => {
                             <th>Body</th>
                             <th>Delete</th>
                         </tr>
-                        {/* {displayUsers} */}
+                 
                         {userData.map(user => (
                         <tr key={user.id}>
                             <td>{user.userId}</td>
