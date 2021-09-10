@@ -68,11 +68,6 @@ export const Navbar = () => {
     }
 
 
-    // const filterdDropdown = search.length === 0 ? userData
-    //     : userData.filter(udata =>
-    //         udata.userId.toString().includes(search.toLowerCase()))
-
-
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
